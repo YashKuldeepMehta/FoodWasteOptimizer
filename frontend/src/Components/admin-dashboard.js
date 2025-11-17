@@ -6,7 +6,7 @@ import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import Sidebar from '../Components/SideBar';
 import '../css/admindashboard.css';
-import HomePage from './HomePage';
+
 
 const AdminDashboard = () => {
     const [chartData, setChartData] = useState(null);

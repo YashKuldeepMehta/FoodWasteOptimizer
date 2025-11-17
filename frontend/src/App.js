@@ -16,6 +16,7 @@ import UserRegistration from './Components/UserRegister';
 import UserDashboard from './Components/user-dashboard';
 import UserLogout from './Components/UserLogout';
 import UserBuy from './Components/UserBuy';
+import Home from './Components/home';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
     <div className='App'>
       <Router>
         <Routes>
-        <Route path='/' element={<Login/>}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/admin-login' element={<Login/>}/>
           <Route path='/admin-dashboard' element={<AdminDashboard/>}/>
           <Route path='/logout' element={<Logout/>}/>
           <Route path='org-logout' element={<OrgLogout/>}/>
