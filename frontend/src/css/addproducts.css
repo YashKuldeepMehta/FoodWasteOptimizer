@@ -1,0 +1,50 @@
+/* src/css/ProductList.css */
+
+.product-list {
+  width: 60%;
+  margin-left: 25pc;
+  padding: 20px;
+}
+
+.product-element {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 10px; /* Adjusts the space between items */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.product-item h3 {
+  margin: 0 0 10px;
+}
+
+.product-item p {
+  margin: 5px 0;
+}
+
+.discounted-price {
+  color: red;
+  font-weight: bold;
+}
+
+form h2{
+  padding-bottom: 12px;
+}
+.forms {
+  width: 60%;
+  margin-left: 27pc;
+  margin-top: 10pc;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

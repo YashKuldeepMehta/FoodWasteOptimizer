@@ -1,0 +1,55 @@
+.inventory-page {
+  display: flex;
+  background: #f4f4f4;
+  height: 100vh;
+}
+
+.inventory-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.inventory-content h2 {
+  margin-bottom: 20px;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.inventory-table th, .inventory-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.inventory-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #475569;
+}
+
+.loading {
+  padding: 40px;
+  font-size: 18px;
+}
+
+.filter-section {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-dropdown {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
