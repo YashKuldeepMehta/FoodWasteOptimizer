@@ -24,7 +24,11 @@ export default function ShopkeeperDashboard() {
 
       setInventory(res.data);
 
-      const soon = res.data.filter(item => item.is_discounted === true);
+      const soon = res.data.filter(item => {
+        if(item.is_discounted === true && item.is_expired === false){
+          return item;
+        }
+      });
       setExpiringSoon(soon);
 
       setLoading(false);

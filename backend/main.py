@@ -4,6 +4,7 @@ from routes.authRoute import router as auth_router
 from routes.shopkeeperRoute import router as shop_router
 from routes.customerRoute import router as customer_router
 from routes.cartRoute import router as cart_router
+from routes.adminRoutes import router as admin_router
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from  utils.expiry_tracker import check_expiry
 
@@ -25,6 +26,7 @@ app.include_router(auth_router, prefix="/api/auth", tags=["Auth"])
 app.include_router(shop_router)
 app.include_router(customer_router)
 app.include_router(cart_router)
+app.include_router(admin_router)
 
 @app.get("/")
 async def home():

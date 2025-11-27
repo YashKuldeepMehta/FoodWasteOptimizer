@@ -1,0 +1,35 @@
+.admin-sidebar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #1e1e2d;
+  padding: 20px;
+  color: white;
+  overflow-y: auto;
+}
+
+.admin-logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.admin-menu li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.admin-menu li a {
+  color: #cfcfcf;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 6px;
+}
+
+.admin-menu li a.active {
+  background: #4f46e5;
+  color: white;
+}

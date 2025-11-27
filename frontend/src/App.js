@@ -7,8 +7,6 @@ import UserRegister from './Components/UserRegister';
 import Logout from "./Components/Logout";
 import Home from './Components/home';
 
-import AdminDashboard from './Components/admin-dashboard';
-
 import CustomerDashboard from './Components/CustomerDashboard';
 import CustomerMarketPlace from "./Components/CustomerMarketPlace";
 import CustomerCart from './Components/CustomerCart'
@@ -40,7 +38,6 @@ function App() {
         <Route path="/customer/checkout" element={<ProtectedRoute allowedRole="customer"><CustomerCheckout/></ProtectedRoute>}></Route>
         <Route path="/customer/history" element={<ProtectedRoute allowedRole="customer"><CustomerPurchaseHistory/></ProtectedRoute>}></Route>
 
-        <Route path='/admin-dashboard' element={<AdminDashboard/>}/>
 
         <Route path="/shopkeeper/dashboard" element={<ProtectedRoute allowedRole="shopkeeper"><ShopkeeperDashboard/></ProtectedRoute>}/>    
         <Route path="/shopkeeper/view-products" element={<ProtectedRoute allowedRole="shopkeeper"><ShopKeeperInventory/></ProtectedRoute>}></Route>

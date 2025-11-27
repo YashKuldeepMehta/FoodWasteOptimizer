@@ -1,0 +1,73 @@
+/* AdminUsers.css */
+.admin-users-container {
+  display: flex;
+}
+
+.admin-users-content {
+  margin-left: 260px;
+  padding: 28px;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.admin-users-content h2 {
+  margin: 0 0 18px 0;
+}
+
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.user-table thead {
+  background: #f1f5f9;
+}
+
+.user-table th, .user-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eef2f6;
+  text-align: left;
+}
+
+.user-table tbody tr:hover {
+  background: #fcfcff;
+}
+
+.role {
+  text-transform: capitalize;
+}
+
+.status-active {
+  color: green;
+  font-weight: 600;
+}
+
+.status-inactive {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.update-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background: #4338ca;
+}
+
+select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}

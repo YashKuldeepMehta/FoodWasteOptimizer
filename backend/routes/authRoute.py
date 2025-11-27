@@ -91,6 +91,9 @@ async def login(data: LoginModel):
 
     if data.password != user["password"]:
         raise HTTPException(400, "Invalid email or password")
+    
+    if user.get("status","active") == "inactive":
+        raise HTTPException(403,"You are not allowed to login")
 
     token = create_token({
         "id": str(user["_id"]),

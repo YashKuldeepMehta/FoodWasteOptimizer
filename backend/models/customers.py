@@ -7,3 +7,4 @@ class Customer(BaseModel):
     email: str
     password: str
     phone: str
+    status : str = "active"

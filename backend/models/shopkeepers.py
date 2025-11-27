@@ -7,3 +7,4 @@ class Shopkeeper(BaseModel):
     shopName: str     
     email: str
     password: str
+    status : str = "active"
